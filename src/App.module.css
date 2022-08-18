@@ -1,3 +1,61 @@
 .container {
-  background: red;
+}
+
+.content {
+  max-width: 736px;
+  margin: 0 auto;
+  margin-top: -27px;
+}
+
+.content > form {
+  width: 100%;
+  display: flex;
+}
+
+.content > form > input {
+  height: 3.375rem;
+  flex: 1;
+  border-radius: 8px;
+  padding: 1rem;
+  outline: none;
+  border: 1px solid var(--gray-700);
+  background: var(--gray-500);
+  color: var(--gray-100);
+}
+
+.content > form > input::placeholder {
+  color: var(--gray-300)
+}
+
+.content > form > input:focus {
+  border: 1px solid var(--purple-dark);
+}
+
+.content > form > button {
+  height: 3.375rem;
+  width: 5.625rem;
+  margin-left: 0.5rem;
+  border-radius: 8px;
+  border: 0;
+  background: var(--blue-dark);
+  font-size: 0.875rem;
+  color: var(--gray-100);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background 0.2s ease-in;
+}
+
+.content > form > button:hover {
+  background: var(--blue);
+}
+
+.content > form > button img {
+  margin-left: 0.5rem;
+}
+
+.taskListContainer {
+  margin-top: 4rem;
 }
