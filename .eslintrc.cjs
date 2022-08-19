@@ -22,6 +22,7 @@ module.exports = {
   rules: {
     'import/prefer-default-export': 'off',
     'react/react-in-jsx-scope': 'off',
+    'max-len': 'off',
     'react/jsx-filename-extension': [1,
       {
         extensions: [

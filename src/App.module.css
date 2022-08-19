@@ -45,11 +45,16 @@
   align-items: center;
   justify-content: center;
 
-  transition: background 0.2s ease-in;
+  transition: background 0.2s;
 }
 
-.content > form > button:hover {
+.content > form > button:hover:enabled {
   background: var(--blue);
+}
+
+.content > form > button:disabled {
+  cursor: not-allowed;
+  filter: brightness(50%)
 }
 
 .content > form > button img {
@@ -59,3 +64,33 @@
 .taskListContainer {
   margin-top: 4rem;
 }
+
+.taskListContainer header {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.taskListContainer header > div {
+  margin-bottom: 1.5rem;
+}
+
+.taskListContainer header > div > strong {
+  font-size: 0.875rem;
+  color: var(--blue);
+}
+
+.taskListContainer header > div .purple {
+  color: var(--purple);
+}
+
+.taskListContainer header > div > span {
+  font-size: 0.75rem;
+  background: var(--gray-400);
+  color: var(--geay-200);
+  border-radius: 999px;
+  padding: 2px 8px;
+  margin-left: 0.5rem;
+}
+
